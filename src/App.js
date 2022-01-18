@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <footer className="footer">
-        <p>This site has been coded by Luciana B Ferrand</p>
+        <p>This project was coded by Luciana B Ferrand</p>
         <a
           className="Luciana Ferrand-link"
           href="https://www.lbferrandportfolio.com/"
@@ -14,6 +14,15 @@ function App() {
           rel="noopener noreferrer"
         >
           My website
+          <br />
+          <a
+            className="github-link"
+            href="https://github.com/lbferrand/weather-app-react-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-sourced on GitHub
+          </a>
         </a>
       </footer>
     </div>
