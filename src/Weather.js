@@ -55,7 +55,7 @@ export default function Weather() {
         </div>
       </div>
       <div className="weahter forecast" id="forecast">
-        <div className="row">
+        <div className="row icons">
           <div className="col-2">
             <div className="weather-forecast-date">Mon</div>
             <img
