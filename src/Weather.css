@@ -26,12 +26,13 @@ h1 {
 }
 
 strong {
-  font-size: 55px;
+  font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow";
   line-height: -50px;
 }
-p {
+.units {
   font-size: 14px;
+  margin-bottom: 20px;
 }
 .temp {
   text-align: left;
@@ -42,7 +43,7 @@ li {
 }
 .details {
   text-align: right;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 .labels {
   display: inline;

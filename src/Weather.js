@@ -34,7 +34,7 @@ export default function Weather() {
         <div className="col-2">
           <div className="clearfix">
             <p>
-              <strong>18</strong>°C |°F
+              <strong>18</strong> <small className="units">°C |°F</small>
             </p>
           </div>
         </div>
