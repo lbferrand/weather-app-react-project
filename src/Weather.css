@@ -12,6 +12,10 @@ form {
   padding: 5px;
   margin: 5px;
 }
+.btn {
+  background: purple;
+  border: none;
+}
 h1 {
   font-family: fantasy;
   text-align: right;

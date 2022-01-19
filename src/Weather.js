@@ -4,17 +4,21 @@ import "./Weather.css";
 export default function Weather() {
   return (
     <div className="Weather">
-      <form>
+      <form id="search-form" className="mb-3">
         <div className="row">
-          <div className="col-6">
+          <div className="col-9">
             <input
               type="search"
               placeholder="Enter a City.."
-              className="search"
+              className="form-control"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -48,17 +52,6 @@ export default function Weather() {
               <li>Mostly Sunny</li>
             </ul>
           </form>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-2">
-          <p>Temperature</p>
-        </div>
-        <div className="col-2">
-          <p>Precipitation</p>
-        </div>
-        <div className="col-2">
-          <p>Wind</p>
         </div>
       </div>
       <div className="weahter forecast" id="forecast">
