@@ -16,15 +16,15 @@ function App() {
             rel="noopener noreferrer"
           >
             My website
-            <br />
-            <a
-              className="github-link"
-              href="https://github.com/lbferrand/weather-app-react-project"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open-sourced on GitHub
-            </a>
+          </a>
+          <br />
+          <a
+            className="github-link"
+            href="https://github.com/lbferrand/weather-app-react-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-sourced on GitHub
           </a>
         </footer>
       </div>
