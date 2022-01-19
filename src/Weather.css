@@ -9,17 +9,26 @@ body {
 h1 {
   font-family: fantasy;
   text-align: right;
-  padding-right: 30px;
+  padding-right: 10px;
+}
+.main-icon {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 25px;
 }
 img {
   display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0px;
-  margin-left: 25px;
+  height: 20px;
+  width: 20px;
+  margin: 25px;
 }
 strong {
-  font-size: 25px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 14px;
 }
 .temp {
   text-align: left;
@@ -27,10 +36,31 @@ strong {
 li {
   font-size: 12px;
   list-style: none;
-  padding-right: 30px;
 }
 .details {
   text-align: right;
+  padding-right: 30px;
+}
+.labels {
+  display: inline;
+}
+span {
+  font-size: 12px;
+}
+.weather-temperature img {
+  height: 100px;
+  width: 100px;
+}
+.weather-forecast-date {
+  font-size: 15px;
+  color: #000;
+}
+.weather-forecast-date img {
+  height: 50px;
+  width: 20px;
+}
+.weather-temp-min {
+  opacity: 0.5;
 }
 footer {
   font-size: 10px;

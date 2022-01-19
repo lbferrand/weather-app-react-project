@@ -5,22 +5,18 @@ export default function Weather() {
   return (
     <div className="Weather">
       <h1>Palm Beach, Fl</h1>
-
       <div className="row">
-        <div className="col-2 temp">
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-1024.png"
-            alt="partly cloudy"
-          ></img>
-          <form>
-            <ul>
-              <li>
-                <strong>18</strong> °C | °F
-              </li>
-            </ul>
-          </form>
+        <div className="col-3">
+          <div className="weather-temperature">
+            <img src="images/cloud_cloudy_sun.png" alt="partly cloudy"></img>
+          </div>
         </div>
-        <div className="col-4 temp">
+        <div className="col-2">
+          <p>
+            <strong>18</strong>°C |°F
+          </p>
+        </div>
+        <div className="col-3 temp">
           <form>
             <ul>
               <li>Precipitation: 0%</li>
@@ -29,13 +25,98 @@ export default function Weather() {
             </ul>
           </form>
         </div>
-        <div className="col-6 details">
+        <div className="col-4 details">
           <form>
             <ul>
-              <li>Tuesday 1:30pm</li>
+              <li></li>
+              <li>Sunday 1:30pm</li>
               <li>Mostly Sunny</li>
             </ul>
           </form>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-2">
+          <p>Temperature</p>
+        </div>
+        <div className="col-2">
+          <p>Precipitation</p>
+        </div>
+        <div className="col-2">
+          <p>Wind</p>
+        </div>
+      </div>
+      <div className="weahter forecast" id="forecast">
+        <div className="row">
+          <div className="col-2">
+            <div className="weather-forecast-date">Mon</div>
+            <img
+              src="images/cloud_cloudy_sun.png"
+              alt="partly cloudy"
+              width="100"
+            ></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
+
+          <div className="col-2">
+            <div className="weather-forecast-date">Tue</div>
+            <img
+              src="images/sun_sunny_yellow_weather_beach_icon.png"
+              alt="sunny"
+              width="50"
+            ></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
+
+          <div className="col-2">
+            <div className="weather-forecast-date">Wed</div>
+            <img src="images/cloud_rain.png" alt="cloudy" width="50"></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
+
+          <div className="col-2">
+            <div className="weather-forecast-date">Thu</div>
+            <img
+              src="images/cloud_snow.png"
+              alt="partly cloudy"
+              width="50"
+            ></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
+
+          <div className="col-2">
+            <div className="weather-forecast-date">Fri</div>
+            <img src="images/cloud_rain.png" alt="cloudy" width="50"></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
+
+          <div className="col-2">
+            <div className="weather-forecast-date">Sat</div>
+            <img
+              src="images/cloud_snow.png"
+              alt="partly cloudy"
+              width="50"
+            ></img>
+            <div className="weather-forescast-temperature">
+              <span className="weather-temp-max">72° </span>
+              <span className="weather-temp-min">62°</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
