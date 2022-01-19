@@ -68,7 +68,7 @@ export default function Weather() {
             <img
               src="images/cloud_cloudy_sun.png"
               alt="partly cloudy"
-              width="100"
+              width="50"
             ></img>
             <div className="weather-forescast-temperature">
               <span className="weather-temp-max">72° </span>
