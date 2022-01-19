@@ -11,6 +11,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a City.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -31,11 +32,13 @@ export default function Weather() {
           </div>
         </div>
         <div className="col-2">
-          <p>
-            <strong>18</strong>°C |°F
-          </p>
+          <div className="clearfix">
+            <p>
+              <strong>18</strong>°C |°F
+            </p>
+          </div>
         </div>
-        <div className="col-3 temp">
+        <div className="col-4 temp">
           <form>
             <ul>
               <li>Precipitation: 0%</li>
@@ -44,7 +47,7 @@ export default function Weather() {
             </ul>
           </form>
         </div>
-        <div className="col-4 details">
+        <div className="col-3 details">
           <form>
             <ul>
               <li></li>
