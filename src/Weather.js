@@ -8,7 +8,10 @@ export default function Weather() {
 
       <div className="row">
         <div className="col-2 temp">
-          <img src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-1024.png"></img>
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/tiny-weather-1/512/cloudy-1024.png"
+            alt="partly cloudy"
+          ></img>
           <form>
             <ul>
               <li>
