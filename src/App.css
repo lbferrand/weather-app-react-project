@@ -10,3 +10,12 @@ footer {
   font-size: 10px;
   padding-top: 20px;
 }
+img {
+  padding-top: 20px;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 12px;
+  margin: 10px;
+}

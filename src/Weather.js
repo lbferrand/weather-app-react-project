@@ -3,12 +3,13 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
     setWeather({
+      ready: true,
       temperature: Math.round(response.data.main.temp),
+      date: "Wednesday 18:42pm",
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
@@ -16,9 +17,8 @@ export default function Weather() {
       description: response.data.weather[0].description,
       icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
     });
-    setReady(true);
   }
-  if (ready) {
+  if (weather.ready) {
     return (
       <div className="Weather">
         <form id="search-form" className="mb-3">
@@ -35,7 +35,7 @@ export default function Weather() {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-200"
               />
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Weather() {
 
         <h1>{weather.city}</h1>
         <div className="row">
-          <div className="col-2">
+          <div className="col-3">
             <div className="weather-temperature">
               <img src={weather.icon} alt={weather.description}></img>
             </div>
@@ -56,7 +56,7 @@ export default function Weather() {
               </p>
             </div>
           </div>
-          <div className="col-4 temp">
+          <div className="col-3 temp">
             <form>
               <ul>
                 <li>Humidity: {weather.humidity}%</li>
@@ -67,8 +67,10 @@ export default function Weather() {
           <div className="col-4 details">
             <form>
               <ul>
-                <li>Sunday 1:30pm</li>
-                <li>Description: {weather.description}</li>
+                <li>{weather.date}</li>
+                <li className="text-capitalize">
+                  Description: {weather.description}
+                </li>
                 <li>Feels like: {weather.feelsLike}</li>
               </ul>
             </form>

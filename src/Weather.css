@@ -11,10 +11,14 @@ body {
 }
 form {
   display: block;
-  padding: 5px;
   margin: 5px;
 }
+.form-control {
+  font-family: fantasy;
+}
 .btn-primary {
+  font-family: fantasy;
+  font-size: 20px;
   background: purple;
   border: none;
 }
@@ -28,12 +32,16 @@ h1 {
 strong {
   font-size: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow";
-  line-height: -50px;
-  margin-left: 20px;
+  line-height: -300px;
+  margin-left: 10px;
+  padding: 0;
 }
 .units {
-  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
   margin-bottom: 20px;
+  margin-left: 0px;
+  padding: 0;
 }
 .temp {
   text-align: left;
@@ -56,7 +64,8 @@ span {
 .weather-temperature img {
   height: 100px;
   width: 100px;
-  margin-left: 10px;
+  margin-left: 5px;
+  padding: 0;
 }
 .weather-forecast-date {
   font-size: 15px;
