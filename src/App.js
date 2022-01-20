@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="New York" />
         <footer className="footer">
           <p>This project was coded by Luciana Bautista Ferrand</p>
           <a
@@ -26,16 +26,6 @@ function App() {
           >
             Open-sourced on GitHub
           </a>
-          <br />
-          <div>
-            <img
-              src="https://hitwebcounter.com/counter/counter.php?page=7928745&style=0033&nbdigits=4&type=page&initCount=0"
-              title="Free Counter"
-              alt="web counter"
-              border="0"
-            />
-            <p>Visitors</p>
-          </div>
         </footer>
       </div>
     </div>
