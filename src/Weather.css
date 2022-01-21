@@ -47,14 +47,3 @@ span {
   font-size: 12px;
   margin-left: 10px;
 }
-.weather-forecast-date {
-  font-size: 15px;
-  color: #000;
-  margin-left: 20px;
-}
-.icons img {
-  margin-left: 12px;
-}
-.weather-temp-min {
-  opacity: 0.5;
-}
