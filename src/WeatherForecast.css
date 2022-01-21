@@ -1,0 +1,16 @@
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.weather-temp-min {
+  opacity: 0.5;
+}
