@@ -64,59 +64,59 @@ export default function Weather(props) {
         <div className="weahter forecast" id="forecast">
           <div className="row icons">
             <div className="col-2">
-              <div className="weather-forecast-date">Mon</div>
+              <div className="weather-forecast-date">Fri</div>
               <img
                 src="images/cloud_cloudy_sun.png"
                 alt="partly cloudy"
                 width="50"
               ></img>
               <div className="weather-forescast-temperature">
-                <span className="weather-temp-max">72° </span>
-                <span className="weather-temp-min">62°</span>
+                <span className="weather-temp-max">24° </span>
+                <span className="weather-temp-min">22°</span>
               </div>
             </div>
 
             <div className="col-2">
-              <div className="weather-forecast-date">Tue</div>
+              <div className="weather-forecast-date">Sat</div>
               <img
                 src="images/sun_sunny_yellow_weather_beach_icon.png"
                 alt="sunny"
                 width="50"
               ></img>
               <div className="weather-forescast-temperature">
-                <span className="weather-temp-max">72° </span>
-                <span className="weather-temp-min">62°</span>
+                <span className="weather-temp-max">23° </span>
+                <span className="weather-temp-min">20°</span>
               </div>
             </div>
 
             <div className="col-2">
-              <div className="weather-forecast-date">Wed</div>
+              <div className="weather-forecast-date">Sun</div>
               <img src="images/cloud_rain.png" alt="cloudy" width="50"></img>
               <div className="weather-forescast-temperature">
-                <span className="weather-temp-max">72° </span>
-                <span className="weather-temp-min">62°</span>
+                <span className="weather-temp-max">21° </span>
+                <span className="weather-temp-min">17°</span>
               </div>
             </div>
 
             <div className="col-2">
-              <div className="weather-forecast-date">Thu</div>
+              <div className="weather-forecast-date">Mon</div>
               <img
                 src="images/cloud_snow.png"
                 alt="partly cloudy"
                 width="50"
               ></img>
               <div className="weather-forescast-temperature">
-                <span className="weather-temp-max">72° </span>
-                <span className="weather-temp-min">62°</span>
+                <span className="weather-temp-max">20° </span>
+                <span className="weather-temp-min">16°</span>
               </div>
             </div>
 
             <div className="col-2">
-              <div className="weather-forecast-date">Fri</div>
+              <div className="weather-forecast-date">Tue</div>
               <img src="images/cloud_rain.png" alt="cloudy" width="50"></img>
               <div className="weather-forescast-temperature">
-                <span className="weather-temp-max">72° </span>
-                <span className="weather-temp-min">62°</span>
+                <span className="weather-temp-max">27° </span>
+                <span className="weather-temp-min">19°</span>
               </div>
             </div>
 
