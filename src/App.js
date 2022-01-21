@@ -8,14 +8,14 @@ function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer className="footer">
-          <p>This project was coded by Luciana Bautista Ferrand</p>
+          <p>This project was coded by </p>
           <a
             className="Luciana Ferrand-link"
             href="https://www.lbferrandportfolio.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            My website
+            Luciana Bautista Ferrand
           </a>
           <br />
           <a
