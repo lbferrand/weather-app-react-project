@@ -7,10 +7,12 @@ import WeatherForecast from "./WeatherForecast.js";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     console.log(response.data);
     setWeather({
       ready: true,
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
@@ -61,7 +63,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weather} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
