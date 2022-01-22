@@ -21,12 +21,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Fri</div>
             <WeatherIcon code="01d" size={45} />
             <div className="weatherForescast-temperature">
-              <span className="weather-temp-max">
-                {forecast[0].temp.main.max}°{" "}
-              </span>
-              <span className="weather-temp-min">
-                {forecast[0].temp.main.min}°{" "}
-              </span>
+              <span className="weather-temp-max">{forecast[0].temp.max}° </span>
+              <span className="weather-temp-min">{forecast[0].temp.min}° </span>
             </div>
           </div>
 
@@ -34,12 +30,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Sat</div>
             <WeatherIcon code="02d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">
-                {forecast[0].temp.main.max}°{" "}
-              </span>
-              <span className="weather-temp-min">
-                {forecast[0].temp.main.min}°{" "}
-              </span>
+              <span className="weather-temp-max">{forecast[0].temp.max}° </span>
+              <span className="weather-temp-min">{forecast[0].temp.min}° </span>
             </div>
           </div>
 
@@ -82,7 +74,7 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "bcb3410460c28e5880f4468f2e882fc0";
+    let apiKey = "c62e463c31af5eb3180a660190b02004";
     let latitude = props.coordinates.lat;
     let longitude = props.coordinates.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weatherlat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
