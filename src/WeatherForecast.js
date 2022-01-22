@@ -21,8 +21,12 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Fri</div>
             <WeatherIcon code="01d" size={45} />
             <div className="weatherForescast-temperature">
-              <span className="weather-temp-max">24° </span>
-              <span className="weather-temp-min">22°</span>
+              <span className="weather-temp-max">
+                {forecast[0].temp.main.max}°{" "}
+              </span>
+              <span className="weather-temp-min">
+                {forecast[0].temp.main.min}°{" "}
+              </span>
             </div>
           </div>
 
@@ -30,8 +34,12 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Sat</div>
             <WeatherIcon code="02d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}° </span>
-              <span className="weather-temp-min">20°</span>
+              <span className="weather-temp-max">
+                {forecast[0].temp.main.max}°{" "}
+              </span>
+              <span className="weather-temp-min">
+                {forecast[0].temp.main.min}°{" "}
+              </span>
             </div>
           </div>
 
