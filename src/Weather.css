@@ -43,7 +43,6 @@ li {
 .labels {
   display: inline;
 }
-span {
-  font-size: 12px;
-  margin-left: 10px;
+.forecastIcon {
+  margin-left: 30px;
 }
