@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon.js";
 import "./WeatherForecast.css";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay.js";
 
 export default function WeatherForecast(props) {
   let [surrendedInfo, setSurrendedInfo] = useState(false);
@@ -18,57 +18,27 @@ export default function WeatherForecast(props) {
       <div className="weahterForecast" id="forecast">
         <div className="row icons">
           <div className="col-2">
-            <div className="weather-forecast-date">Fri</div>
-            <WeatherIcon code="01d" size={45} />
-            <div className="weatherForescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[0]} />
           </div>
 
           <div className="col-2">
-            <div className="weather-forecast-date">Sat</div>
-            <WeatherIcon code="02d" size={45} />
-            <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[1]} />
           </div>
 
           <div className="col-2">
-            <div className="weather-forecast-date">Sun</div>
-            <WeatherIcon code="03d" size={45} />
-            <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[2]} />
           </div>
 
           <div className="col-2">
-            <div className="weather-forecast-date">Mon</div>
-            <WeatherIcon code="02n" size={45} />
-            <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[3]} />
           </div>
 
           <div className="col-2">
-            <div className="weather-forecast-date">Tue</div>
-            <WeatherIcon code="10d" size={45} />
-            <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[4]} />
           </div>
 
           <div className="col-2">
-            <div className="weather-forecast-date">Sat</div>
-            <WeatherIcon code="11d" size={45} />
-            <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
-              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
-            </div>
+            <WeatherForecastDay data={forecast[5]} />
           </div>
         </div>
       </div>
