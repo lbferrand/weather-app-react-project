@@ -21,8 +21,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Fri</div>
             <WeatherIcon code="01d" size={45} />
             <div className="weatherForescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}° </span>
-              <span className="weather-temp-min">{forecast[0].temp.min}° </span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
 
@@ -30,8 +30,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Sat</div>
             <WeatherIcon code="02d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">{forecast[0].temp.max}° </span>
-              <span className="weather-temp-min">{forecast[0].temp.min}° </span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
 
@@ -39,8 +39,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Sun</div>
             <WeatherIcon code="03d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">21° </span>
-              <span className="weather-temp-min">17°</span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
 
@@ -48,8 +48,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Mon</div>
             <WeatherIcon code="02n" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">20° </span>
-              <span className="weather-temp-min">16°</span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
 
@@ -57,8 +57,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Tue</div>
             <WeatherIcon code="10d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">27° </span>
-              <span className="weather-temp-min">19°</span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
 
@@ -66,8 +66,8 @@ export default function WeatherForecast(props) {
             <div className="weather-forecast-date">Sat</div>
             <WeatherIcon code="11d" size={45} />
             <div className="weather-forescast-temperature">
-              <span className="weather-temp-max">72° </span>
-              <span className="weather-temp-min">62°</span>
+              <span className="weather-temp-max">{forecast[0].temp.max}°</span>
+              <span className="weather-temp-min">{forecast[0].temp.min}°</span>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function WeatherForecast(props) {
     let apiKey = "c62e463c31af5eb3180a660190b02004";
     let latitude = props.coordinates.lat;
     let longitude = props.coordinates.lon;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weatherlat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return null;
   }
