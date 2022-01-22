@@ -1,8 +1,7 @@
 .float-left {
   height: 100px;
   width: 100px;
-  margin-left: 25px;
-  padding: 0;
+  margin-right: 10px;
 }
 strong {
   font-size: 50px;
@@ -12,4 +11,8 @@ strong {
 }
 p {
   margin: 0;
+}
+.units {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 5px;
 }

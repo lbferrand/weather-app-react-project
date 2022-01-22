@@ -29,11 +29,14 @@ h1 {
   padding-top: 20px;
   color: purple;
 }
+.weatherTemperature {
+  margin-left: 20px;
+}
 .temp {
   text-align: left;
 }
 li {
-  font-size: 12px;
+  font-size: 14px;
   list-style: none;
 }
 .details {
@@ -44,5 +47,5 @@ li {
   display: inline;
 }
 .forecastIcon {
-  margin-left: 30px;
+  margin-left: 20px;
 }
